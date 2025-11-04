@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+  <head>
+    <title>Haris Ocuz - WebDev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" charset="UTF-8" />
+  </head>
+
+  <body>
+    <div class="container">
+
+
+        <!-- ******** TITLE IMG - SECTION ***********  -->
+      <div class="section-title-img">
+        <button class="light-night">Click me</button>
+      </div>
+      <div class="section-feed grid">
+        <div class="profile-img-section">
+        </div>
+        <div class="profile-flex">
+          <div class="profile-info">
+            <span class="profile-name">Haris Ocuz</span>
+            <span class="profile-nick">@HareMetak</span>
+          </div>
+          <div class="profile-btns">
+            <div>
+              <button class="round-btns">
+                 <ion-icon class="icons" name="chatbox-outline"></ion-icon>
+              </button>
+            </div>
+            <div>
+              <button class="round-btns">
+                <ion-icon class="icons" name="document-text-outline"></ion-icon>
+              </button>
+            </div>
+            <div class="follow-btn-flex">
+              <button class="follow-btn">
+                <span>Follow
+                </span>
+                <span
+                  ><ion-icon class="icons-follow" name="person-add-outline"></ion-icon>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ******* BIO / PERSONAL SECTION ************ -->
+
+      <div class="section-bio container">
+        <div class="bio">
+          <p class="bio-text">
+          Code nach Feierabend, Lernen zwischen Windeln und Gute-Nacht-Geschichten – ich bin selbstgelernter Webentwickler mit echter Leidenschaft fürs Coden. Mit Neugier, Ausdauer und täglichem Einsatz habe ich mir alles selbst beigebracht. Jetzt bereit, in der Tech-Welt durchzustarten.
+        </p>
+        </div>
+        <div class="personal-info">
+          <div class="location personal">
+            <span><ion-icon class="icons icons-bio" name="location-outline"></ion-icon></span>
+            <span>Lüdinghausen, Deutschland</span>
+          </div>
+          <div class="location personal">
+            <span><ion-icon class="icons icons-bio" name="briefcase-outline"></ion-icon></span>
+            <span>Hotel Conti, Münster</span>
+          </div>
+          <div class="birthday personal">
+            <span><ion-icon class="icons icons-bio" name="calendar-outline"></ion-icon></span>
+            <span>20.09.1994</span>
+          </div>
+          <div class="perso personal">
+            <span><ion-icon class="icons icons-bio" name="person-outline"></ion-icon></span>
+            <span>Verheiratet, Papa von Ali</span>
+          </div>
+          <div class="joined personal">
+            <span><ion-icon class="icons icons-bio" name="newspaper-outline"></ion-icon></span>
+            <span>4 Posts</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ******* FOLLOWING & FOLLOWERS SECTION ************ -->
+
+      <div class="section-followers container grid-3">
+        <div class="description">
+          <span class="title">Posts</span>
+          <span class="number">69</span>
+        </div>
+        <div class="description">
+          <span class="title">Following</span>
+          <span class="number">3</span>
+        </div>
+        <div class="description"  >
+        <span class="title">Followers</span>
+        <span class="number">2.2M</span>
+      </div>
+      
+    </div>
+
+      <!-- ******* ACCORDION SECTION ************ -->
+
+      <div class="accordion-section container">
+        <div class="a-flex">
+        <div class="accordion">
+          <button class="accordion-header accordion--active" data-tab = "1">Feed</button>
+        </div>
+        <div class="accordion ">
+          <button class="accordion-header" data-tab = "2">Projekte</button>
+        </div>
+        <div class="accordion  ">
+          <button class="accordion-header" data-tab = "3">Erfahrung</button>
+        </div>
+        <div class="accordion ">
+          <button class="accordion-header" data-tab = "4">Über mich</button>
+        </div>
+      </div>
+
+
+
+      <!-- ******* POSTs ************ -->
+       <div class="section section-1 section--active ">
+      <div class="post ">
+      <div class="accordion-flex">
+        <div class="accordion-img"></div>
+        <div class="accordion-info">
+          <span>@HareMetak</span>
+          <span>02.01.2025</span>
+        </div>
+      </div>
+      <div class="feed-bio">
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aspernatur id harum culpa reiciendis ipsum nesciunt deserunt labore, repellat quidem beatae recusandae eius a, ratione ea ipsa hic expedita doloribus.</span>
+      </div>
+      <div class="feed-img-center">
+      <div class="feed-img-post post-1">
+
+      </div>
+    </div>
+    <div class="reaction">
+      <span class="comment-btn"><ion-icon class="icons" name="chatbubbles-outline"></ion-icon></span>
+      <span ><ion-icon class="icons like-btn" name="heart-outline"></ion-icon></span>
+     
+    </div>
+  </div>
+    <div class="post">
+    <div class="accordion-flex">
+      <div class="accordion-img"></div>
+      <div class="accordion-info">
+        <span>@HareMetak</span>
+        <span>02.01.2025</span>
+      </div>
+    </div>
+    <div class="feed-bio">
+      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aspernatur id harum culpa reiciendis ipsum nesciunt deserunt labore, repellat quidem beatae recusandae eius a, ratione ea ipsa hic expedita doloribus.</span>
+    </div>
+    <div class="feed-img-center">
+    <div class="feed-img-post post-2">
+
+    </div>
+  </div>
+  <div class="reaction">
+    <span class="comment-btn"><ion-icon class="icons" name="chatbubbles-outline"></ion-icon></span>
+    <span ><ion-icon class="icons like-btn" name="heart-outline"></ion-icon></span>
+   
+  </div>
+</div>
+
+<div class="post">
+  <div class="accordion-flex">
+    <div class="accordion-img"></div>
+    <div class="accordion-info">
+      <span>@HareMetak</span>
+      <span>02.01.2025</span>
+    </div>
+  </div>
+  <div class="feed-bio">
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aspernatur id harum culpa reiciendis ipsum nesciunt deserunt labore, repellat quidem beatae recusandae eius a, ratione ea ipsa hic expedita doloribus.</span>
+  </div>
+  <div class="feed-img-center">
+  <div class="feed-img-post post-3">
+
+  </div>
+</div>
+<div class="reaction">
+  <span class="comment-btn"><ion-icon class="icons" name="chatbubbles-outline"></ion-icon></span>
+  <span ><ion-icon class="icons like-btn" name="heart-outline"></ion-icon></span>
+ 
+</div>
+</div>
+<div class="post">
+  <div class="accordion-flex">
+    <div class="accordion-img"></div>
+    <div class="accordion-info">
+      <span>@HareMetak</span>
+      <span>02.01.2025</span>
+    </div>
+  </div>
+  <div class="feed-bio">
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aspernatur id harum culpa reiciendis ipsum nesciunt deserunt labore, repellat quidem beatae recusandae eius a, ratione ea ipsa hic expedita doloribus.</span>
+  </div>
+  <div class="feed-img-center">
+  <div class="feed-img-post post-4">
+
+  </div>
+</div>
+<div class="reaction">
+  <span class="comment-btn"><ion-icon class="icons" name="chatbubbles-outline"></ion-icon></span>
+  <span ><ion-icon class="icons like-btn" name="heart-outline"></ion-icon></span>
+ 
+</div>
+</div>
+<div class="post">
+  <div class="accordion-flex">
+    <div class="accordion-img"></div>
+    <div class="accordion-info">
+      <span>@HareMetak</span>
+      <span>02.01.2025</span>
+    </div>
+  </div>
+  <div class="feed-bio">
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aspernatur id harum culpa reiciendis ipsum nesciunt deserunt labore, repellat quidem beatae recusandae eius a, ratione ea ipsa hic expedita doloribus.</span>
+  </div>
+  <div class="feed-img-center">
+  <div class="feed-img-post post-5">
+
+  </div>
+</div>
+<div class="reaction">
+  <span class="comment-btn"><ion-icon class="icons" name="chatbubbles-outline"></ion-icon></span>
+  <span ><ion-icon class="icons like-btn"name="heart-outline"></ion-icon></span>
+ 
+</div>
+</div>
+
+  <!-- TEST   -->
+
+  <div class="post">
+    <div class="accordion-flex">
+      <div class="accordion-img"></div>
+      <div class="accordion-info">
+        <span>@HareMetak</span>
+        <span>02.01.2025</span>
+      </div>
+    </div>
+    <div class="feed-bio">
+      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aspernatur id harum culpa reiciendis ipsum nesciunt deserunt labore, repellat quidem beatae recusandae eius a, ratione ea ipsa hic expedita doloribus.</span>
+    </div>
+    <div class="feed-img-center">
+      <!-- post-5 => removed from class list -->
+    <div class="feed-img-post ">
+      <div class="test-img  img-visible" data-img="0">
+      </div>
+
+        <div class="test-img hidd-img " data-img="1">
+      </div>
+      <div class="test-img hidd-img " data-img="2">
+      </div>
+      <div class="test-img hidd-img " data-img="3">
+      </div>
+
+
+
+
+
+      <!-- <img class="test-img img-visible" data-img="0" src="IMG_0492.jpeg" alt="as"> -->
+      <!-- <img class="test-img" data-img="1" src="IMG_0523.jpeg" alt="as">
+      <img class="test-img" data-img="2" src="IMG_0551.jpeg" alt="as">
+      <img class="test-img" data-img="3" src="IMG_0554.jpeg" alt="as"> -->
+      
+      <button class="test-arrow arrow-right-test"><span><ion-icon name="chevron-forward-outline" class="arrow-hover"></ion-icon></span></button>
+
+      <button class="test-arrow arrow-left-test arrow-left-test-hidden"><span><ion-icon name="chevron-back-outline" class="arrow-hover"></ion-icon></span></button>
+
+    </div>
+  </div>
+
+  <!-- TEST  end -->
+
+
+  <div class="reaction">
+    <span class="comment-btn"><ion-icon class="icons" name="chatbubbles-outline"></ion-icon></span>
+    <span ><ion-icon class="icons like-btn"name="heart-outline"></ion-icon></span>
+   
+  </div>
+  </div>
+
+
+       </div>
+      <!-- ******* Projekte ************ -->
+       <div class="section section-2 projekte-section container ">
+        <div class="slide-container">
+        <div class="projekte-container" data-car="0">
+          <div class="projekte-img">
+            <img src="IMG_0554.jpeg" alt="">
+          </div>
+          <div class="projekte-info">
+            <h3 class="projekte-title">Projekt title</h3>
+            <span class="projekte-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptatibus nisi recusandae perspiciatis iusto dolorem esse. Esse similique aspernatur neque. Odio id magni rem odit ullam quasi fuga earum at!</span>
+            <span class="projekte-technoligien">
+              <ion-icon class="icons-carousell icon-tech" name="logo-html5"></ion-icon>
+              <ion-icon class="icons-carousell icon-tech" name="logo-css3"></ion-icon>
+              <ion-icon class="icons-carousell icon-tech" name="logo-javascript"></ion-icon>
+              <div class="carousell-btns">
+                <ion-icon class="icons-carousell icon-left" name="chevron-back-outline"></ion-icon>
+            
+                <ion-icon class="icons-carousell icon-right"  name="chevron-forward-outline"></ion-icon>
+              </div>
+        
+                <div class="carousell-rings">
+                  <button class="ring ring-active"></button>
+                  <button class="ring"></button>
+                  <button class="ring"></button>
+                </div>
+
+            </span>
+          </div>
+            <!-- <div class="carousell-btns">
+            <ion-icon class="icons-carousell icon-left" name="chevron-back-outline"></ion-icon>
+        
+            <ion-icon class="icons-carousell icon-right"  name="chevron-forward-outline"></ion-icon>
+          </div>
+
+            <div class="carousell-rings">
+              <button class="ring ring-active"></button>
+              <button class="ring"></button>
+              <button class="ring"></button>
+            </div> -->
+        </div>
+        <div class="projekte-container" data-car="1">
+          <div class="projekte-img">
+            <img src="IMG_0554.jpeg" alt="">
+          </div>
+          <div class="projekte-info">
+            <h3 class="projekte-title">Projekt title</h3>
+            <span class="projekte-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptatibus nisi recusandae perspiciatis iusto dolorem esse. Esse similique aspernatur neque. Odio id magni rem odit ullam quasi fuga earum at!</span>
+            <span class="projekte-technoligien">
+              <ion-icon class="icons-carousell icon-tech" name="logo-html5"></ion-icon>
+              <ion-icon class="icons-carousell icon-tech" name="logo-css3"></ion-icon>
+              <ion-icon class="icons-carousell icon-tech" name="logo-javascript"></ion-icon>
+              <div class="carousell-btns">
+                <ion-icon class="icons-carousell icon-left" name="chevron-back-outline"></ion-icon>
+            
+                <ion-icon class="icons-carousell icon-right"  name="chevron-forward-outline"></ion-icon>
+              </div>
+        
+                <div class="carousell-rings">
+                  <button class="ring ring-active"></button>
+                  <button class="ring"></button>
+                  <button class="ring"></button>
+                </div>
+
+            </span>
+          </div>
+          
+           
+        </div>
+        <div class="projekte-container" data-car="2">
+          <div class="projekte-img">
+            <img src="IMG_0554.jpeg" alt="">
+          </div>
+          <div class="projekte-info">
+            <h3 class="projekte-title">Projekt title</h3>
+            <span class="projekte-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptatibus nisi recusandae perspiciatis iusto dolorem esse. Esse similique aspernatur neque. Odio id magni rem odit ullam quasi fuga earum at!</span>
+            <span class="projekte-technoligien">
+              <ion-icon class="icons-carousell icon-tech" name="logo-html5"></ion-icon>
+              <ion-icon class="icons-carousell icon-tech" name="logo-css3"></ion-icon>
+              <ion-icon class="icons-carousell icon-tech" name="logo-javascript"></ion-icon>
+              <div class="carousell-btns">
+                <ion-icon class="icons-carousell icon-left" name="chevron-back-outline"></ion-icon>
+            
+                <ion-icon class="icons-carousell icon-right"  name="chevron-forward-outline"></ion-icon>
+              </div>
+        
+                <div class="carousell-rings">
+                  <button class="ring ring-active"></button>
+                  <button class="ring"></button>
+                  <button class="ring"></button>
+                </div>
+
+            </span>
+          </div>
+          
+            
+        </div>
+      </div>
+      
+       </div>
+
+      <!-- ******* Experience ************ -->
+
+
+       <div class="section section-3 experience-section container"> <!-- Add experience-section -->
+        <h2>KURSEVI</h2>
+      </div>
+    </div>
+
+    <div class="section section-4 container about-me-section">
+      <h2>Meine Geschichte</h2>
+      <p>Ich habe mein bisheriges Berufsleben in der Gastronomie und im Hotelgewerbe verbracht und arbeite aktuell als Empfangsmitarbeiter im Hotel Conti. Der erste Funke für die Welt der Technik wurde jedoch schon früher entfacht – im Residence Inn Marriott in Sarajevo, meiner Heimatstadt. Dort arbeiteten wir mit einem textbasierten Buchungssystem namens "Marsha", das komplett über die Tastatur bedient wurde. Kein Mauszeiger, nur grüne Buchstaben auf schwarzem Hintergrund – fast wie in der Matrix. Es war ungewohnt, aber faszinierend. Ich merkte damals, wie viel schneller und direkter man mit solchen Systemen arbeiten konnte, und war sofort neugierig auf das, was „unter der Haube“ steckt.
+        Leider konnte ich zu der Zeit keine IT-Kurse belegen – sie waren einfach zu teuer, und durch zwei Jobs fehlte mir auch die Zeit. Erst nach meiner Einreise nach Deutschland konnte ich mir finanzielle Sicherheit aufbauen und wieder anfangen, diesem Interesse nachzugehen. Ich kaufte mir erste Online-Kurse auf Udemy und begann, abends und an freien Tagen zu lernen.
+        Anfangs beschäftigte ich mich mit Software-Testing, weil es mir als ein möglicher Einstieg in die IT erschien. Ich bestand 2023 das ISTQB-Zertifikat, merkte aber bald: Das ist nicht das, was mich wirklich begeistert. Also probierte ich Webentwicklung aus – mit YouTube-Tutorials, kleinen Projekten und Schritt für Schritt wuchs meine Begeisterung. Ich war angekommen.
+        Seitdem nutze ich jede freie Minute neben meinem Job und meinem zweijährigen Sohn, um zu coden, zu lernen und mich weiterzuentwickeln. Meine Mentoren heißen Udemy, ChatGPT und YouTube – und mein Antrieb ist der Wunsch, in der Tech-Welt Fuß zu fassen.
+        Ich weiß, dass ich vielleicht nicht der klassische Kandidat bin. Aber ich bringe Ausdauer, Lernbereitschaft und echte Motivation mit. Wenn Sie mir eine Chance geben, verspreche ich, sie zu nutzen – und mich mit voller Kraft einzubringen.
+        </p>
+    </div>
+      <!-- ******* FOOTER  ************ -->
+      
+       <div class="footer-section ">
+        <div class="footer-container">
+          <h3 class="footer-h3">Haris Ocuz</h3>
+          <span class="footer-span">Web Entwickler</span>
+          <div class="social-icons">
+            <a class="footer-link" href="#">
+            <ion-icon  name="logo-facebook"></ion-icon></a>
+            <a class="footer-link" href="#">
+            <ion-icon  name="logo-instagram"></ion-icon></a>
+            <a class="footer-link" href="#">
+            <ion-icon  name="logo-linkedin"></ion-icon></a>
+            <a class="footer-link" href="#">
+            <ion-icon name="logo-twitter"></ion-icon></a>
+          </div>
+        </div>
+
+       </div>
+
+      
+
+
+       <!-- <div class="projekt grid-columns">
+        <div class="projekt-img">
+          <img src="IMG_0492.jpeg" alt="">
+        </div>
+        <div class="projekt-info"> 
+          <span class="projekt-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis fugit eum adipisci deleniti eveniet consequatur odio accusamus et, ipsa placeat excepturi maxime inventore quod repellat facere quae aspernatur ipsam laborum.</span>
+          <span class="projekte-technologien">
+            HTML CSS JS
+          </span>
+        </div>
+      </div> -->
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+ 
+  <script src="script.js"></script>
+</html>
