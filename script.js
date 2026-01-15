@@ -136,27 +136,41 @@ arrows.forEach((e) => {
   });
 });
 
-//////// PROJEKTE Karusel - RADI v1
+// *********** FOLLOW BTN *************
+const followBtn = document.querySelector(".follow-btn");
+let isFollowing = false;
 
-// const btns = document.querySelector(".carousell-btns");
-// const slides = document.querySelectorAll(".projekte-container");
+followBtn.addEventListener("click", () => {
+  isFollowing = !isFollowing;
 
-// let curSlide = 0;
+  followBtn.innerHTML = isFollowing
+    ? `<span>Unfollow</span>
+       <span>
+         <ion-icon class="icons-follow" name="person-remove-outline"></ion-icon>
+       </span>`
+    : `<span>Follow</span>
+       <span>
+         <ion-icon class="icons-follow" name="person-add-outline"></ion-icon>
+       </span>`;
+});
 
-// btns.addEventListener("click", function (btn) {
-//   slides.forEach((e) => {
-//     if (e.classList.contains("projekte-container-visible"))
-//       e.classList.remove("projekte-container-visible");
-//   });
-//   if (btn.target.classList.contains("icon-right")) {
-//     document
-//       .querySelector(`[data-car="${curSlide + 1}"]`)
-//       .classList.add("projekte-container-visible");
-//     curSlide++;
-//     console.log("right");
-//   } else if (btn.target.classList.contains("icon-left")) {
-//     console.log("left");
-//   }
+// *********** EMAIL FUNCTION *************
+
+// const emailOnClick = document.querySelector(".email-onClick");
+// const emailForm = document.querySelector(".email-send-active");
+
+// emailOnClick.addEventListener("click", function () {
+//   console.log("click");
+
+//   if (emailForm.className === ".email-send-hidden")
+//     emailForm.classList.add(".email-send-active");
 // });
 
-//////// PROJEKTE Karusel - RADI v2
+document.addEventListener("DOMContentLoaded", function () {
+  const emailOnClick = document.querySelector(".email-onClick");
+  const emailForm = document.querySelector(".email-send");
+
+  emailOnClick.addEventListener("click", function () {
+    emailForm.classList.toggle("email-send-active");
+  });
+});

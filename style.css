@@ -54,11 +54,20 @@ Primary : #0c8599;
 html {
   font-size: 62.5%;
 }
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 * {
   margin: 0;
   padding: 0;
 }
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   width: 100vw;
   box-sizing: border-box;
   font-family: "poppins", sans-serif;
@@ -68,11 +77,34 @@ body {
   background-color: #f8f9fa;
 }
 .container {
+  /* position: relative; */
+
+  flex: 1;
   width: 80%;
   margin: 0 auto;
   background-color: #f8f9fa;
   transition: all 0.5s;
 }
+
+/* // EMAIL */
+
+/* .email-send-hidden {
+  display: none;
+}
+.email-send-active {
+  display: block;
+  position: fixed; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+
+  z-index: 1000;
+} */
+
 .section-title-img {
   background-image: linear-gradient(to right, #0c8599, #fff);
   height: 30rem;
@@ -95,6 +127,7 @@ body {
 .profile-img-section {
   height: 16rem;
   width: 16rem;
+
   border: 5px solid #fff;
   border-radius: 50%;
   background-image: url(IMG_0554.jpeg);
@@ -102,6 +135,15 @@ body {
   background-size: cover;
   margin-left: 5rem;
   transform: translateY(-50%);
+  transition: all 0.5s;
+}
+.profile-img-section:hover {
+  cursor: pointer;
+  height: 40rem;
+  width: 40rem;
+}
+
+.profile-scale {
 }
 
 .profile-flex {
@@ -342,6 +384,15 @@ body {
 .post-5 {
   background-image: url(5.JPG);
 }
+.post-1,
+.post-2,
+.post-3,
+.post-4,
+.post-5 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .reaction {
   display: flex;
   justify-content: end;
@@ -363,9 +414,29 @@ body {
 /* ******* PROJEKTE SECTION ************  */
 .section-2 {
   display: none;
+  margin-bottom: 18rem;
 }
 
-.slide-container {
+.projects-sections {
+  /* position: relative; */
+  /* height: 30rem; */
+  width: 100%;
+  background-color: #9eced6;
+  padding: 1.2rem 2.4rem 1.2rem 8.8rem;
+  border-radius: 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 8.8rem;
+  box-shadow: 3px 3px 10px #05353d;
+}
+.projects {
+  width: 100%;
+  background-color: red;
+  margin-bottom: 10rem;
+  padding: 10rem 0rem;
+  border-radius: 11px;
+}
+/* .slide-container {
   display: grid;
   gap: 35rem;
   border-radius: 7px;
@@ -376,17 +447,6 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.projekte-container {
-  position: relative;
-  height: 30rem;
-  width: 120%;
-  background-color: #9eced6;
-  padding: 1.2rem 2.4rem 1.2rem 8.8rem;
-  border-radius: 11px;
-  display: flex;
-  gap: 8.8rem;
-  box-shadow: 3px 3px 10px #05353d;
-}
 
 .projekte-info {
   display: flex;
@@ -434,11 +494,11 @@ body {
   font-weight: 100;
   color: #0c8599;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.3s; */
 
-  /* font-size: 5rem; */
-}
-.icon-tech {
+/* font-size: 5rem; */
+
+/* .icon-tech {
   height: 2.8rem;
   width: 2.8rem;
   transition: all 0.3s;
@@ -474,17 +534,11 @@ body {
 }
 .ring.ring-active {
   background-color: #3d9dad;
-}
-
-/* <!-- ******* Erfahrung ************ --> */
-
-.section-3 {
-  display: none;
-}
+} */
 
 /* <!-- ******* about me ************ --> */
 
-.section-4 {
+.section-3 {
   display: none;
 }
 
@@ -548,6 +602,11 @@ body {
 
 .img-visible {
   height: 100% !important;
+
+  background-image: url("slika.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 [data-img="0"] {
