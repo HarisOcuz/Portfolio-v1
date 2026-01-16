@@ -68,7 +68,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
   box-sizing: border-box;
   font-family: "poppins", sans-serif;
   /* font-family: sans-serif; */
@@ -86,24 +86,94 @@ body {
   transition: all 0.5s;
 }
 
-/* // EMAIL */
+/* * EMAIL */
 
-/* .email-send-hidden {
+.email-send-form {
+  padding: 4em 8rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.email-send-container {
+  background-color: #9eced6;
+
+  width: 30%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  gap: 3rem;
+  z-index: 1;
+  overlay: auto;
+  border-radius: 11px;
+  border: none;
+  box-shadow: 0 6px 3px rgba(124, 218, 255, 0.2);
+}
+.email-overlay {
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(6px);
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.hidden {
   display: none;
 }
-.email-send-active {
-  display: block;
-  position: fixed; 
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  padding: 20px 30px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
 
-  z-index: 1000;
-} */
+.input-email-field,
+.send-email-btn {
+  font-weight: 500;
+  border-radius: 11px;
+  border: 2px solid transparent;
+  box-shadow: 0 6px 3px rgba(124, 218, 255, 0.2);
+  padding: 1rem 2rem;
+}
+.input-email-field:hover {
+  border: 2px solid #0c8599;
+}
+.close-email-form {
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  font-weight: 800;
+  font-size: 2rem;
+  border: none;
+
+  padding: none;
+  transform: translate(50%, -50%);
+  transition: all 0.3s;
+}
+.close-email-form:hover {
+  cursor: pointer;
+  font-size: 2.4rem;
+}
+.input-email-field-user-info {
+  align-self: center;
+}
+
+.input-email-field-message {
+  box-sizing: border-box;
+  align-self: center;
+  line-height: normal;
+  width: 80%;
+  height: 10rem;
+  padding: 1rem;
+}
+.send-email-btn {
+  align-self: center;
+  font-weight: 700;
+  transition: all 0.3s;
+  border: 2px solid transparent;
+}
+.send-email-btn:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  border: 2px solid #0c8599;
+}
+.has-input-error {
+  border: 2px solid red;
+}
 
 .section-title-img {
   background-image: linear-gradient(to right, #0c8599, #fff);
@@ -536,13 +606,13 @@ body {
   background-color: #3d9dad;
 } */
 
-/* <!-- ******* about me ************ --> */
+/* * <!-- ******* about me ************ --> */
 
 .section-3 {
   display: none;
 }
 
-/* <!-- ******* FOOTER ************ --> */
+/* * <!-- ******* FOOTER ************ --> */
 
 .footer-section {
   display: flex;

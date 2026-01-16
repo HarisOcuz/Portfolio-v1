@@ -61,6 +61,7 @@ commentBtn.forEach((el) => {
 });
 
 // *********** IMAGE CAROUSEL FUNCTION *************
+
 const divImg = document.querySelectorAll(".test-img");
 const arrows = document.querySelectorAll(".test-arrow");
 
@@ -68,7 +69,8 @@ const maxCarLength = divImg.length - 1;
 let curImg = 0;
 
 console.log(maxCarLength);
-// Function to remove and add classes to images
+
+// * Function to remove and add classes to images
 
 const addRemoveClasses = function (e) {
   if (e === "add") {
@@ -91,7 +93,8 @@ const addRemoveClasses = function (e) {
 
 console.log(curImg);
 
-/// EVENT LISTENER FOR SCROLLING
+/// * EVENT LISTENER FOR SCROLLING
+
 arrows.forEach((e) => {
   e.addEventListener("click", function () {
     divImg.forEach((e, i) => {
@@ -156,21 +159,34 @@ followBtn.addEventListener("click", () => {
 
 // *********** EMAIL FUNCTION *************
 
-// const emailOnClick = document.querySelector(".email-onClick");
-// const emailForm = document.querySelector(".email-send-active");
+const openEmailForm = document.querySelector(".email-onClick");
+const closeEmailForm = document.querySelector(".close-email-form");
+const overlay = document.querySelector(".email-overlay");
+const emailForm = document.querySelector(".email-send-container");
+const sendEmailBtn = document.querySelector(".send-email-btn");
+const inputNameField = document.querySelector(".input-email-field-name ").value;
 
-// emailOnClick.addEventListener("click", function () {
-//   console.log("click");
+const inputEmailFields = document.querySelectorAll(".input-email-field");
 
-//   if (emailForm.className === ".email-send-hidden")
-//     emailForm.classList.add(".email-send-active");
-// });
+openEmailForm.addEventListener("click", function () {
+  emailForm.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+});
 
-document.addEventListener("DOMContentLoaded", function () {
-  const emailOnClick = document.querySelector(".email-onClick");
-  const emailForm = document.querySelector(".email-send");
+closeEmailForm.addEventListener("click", function () {
+  emailForm.classList.add("hidden");
+  overlay.classList.add("hidden");
+});
 
-  emailOnClick.addEventListener("click", function () {
-    emailForm.classList.toggle("email-send-active");
-  });
+overlay.addEventListener("click", function () {
+  emailForm.classList.add("hidden");
+  overlay.classList.add("hidden");
+});
+
+sendEmailBtn.addEventListener("click", function () {
+  inputEmailFields.forEach((fields) =>
+    fields.value === ""
+      ? fields.classList.add("has-input-error")
+      : fields.classList.remove("has-input-error")
+  );
 });

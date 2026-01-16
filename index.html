@@ -10,19 +10,23 @@
 
   <body>
     <div class="container">
-      <div class="main-container">
+      <!-- <div class="main-container"> -->
 
         
         
-        <!-- // EMAIL -->
+        <!-- // EMAIL  -->
+         <div class="email-overlay hidden"></div>
         
-        <!-- <div class="email-send email-send-hidden">
-          <input placeholder="Name"></input>
-          <input placeholder="E-Mail"></input>
-          <input placeholder="Nachricht"></input>
-          
-        </div>
-        -->
+        <div class="email-send-container hidden">
+          <button class="close-email-form">X</button>
+          <div class="email-send-form">
+            <input placeholder="Name" class="input-email-field input-email-field-name input-email-field-user-info"></input>
+            <input placeholder="E-Mail" class="input-email-field input-email-field-email input-email-field-user-info"></input>
+            <textarea placeholder="Nachricht" class="input-email-field input-email-field-message input-email-field-message"></textarea>
+            <button class="send-email-btn">Senden</button>
+          </div>
+        </div> 
+       
         
         
         
@@ -347,7 +351,7 @@
             <a class="footer-link" href="https://github.com/HarisOcuz" target="_blank">
             <ion-icon name="logo-github"></ion-icon></a>
           </div>
-        </div>
+        <!-- </div> -->
 
        </div>
 
