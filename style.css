@@ -215,7 +215,7 @@ body {
 
   border: 5px solid #fff;
   border-radius: 50%;
-  background-image: url(IMG_0554.jpeg);
+  background-image: url(pics/profile-pic.jpg);
   background-position: center;
   background-size: cover;
   margin-left: 5rem;
@@ -281,7 +281,9 @@ body {
   height: 2.2rem;
   color: #0c8599;
   font-weight: 800;
-  text-shadow: 1px 1px 0 black, -1px -1px 0 black;
+  text-shadow:
+    1px 1px 0 black,
+    -1px -1px 0 black;
 
   transition: all 0.3s;
 }
@@ -386,7 +388,7 @@ body {
 .accordion-img {
   height: 4.8rem;
   width: 4.8rem;
-  background-image: url(IMG_0554.jpeg);
+  background-image: url(pics/profile-pic.jpg);
   background-size: cover;
   border-radius: 50%;
 }
@@ -469,6 +471,7 @@ body {
 .post-5 {
   background-image: url(pics/20211111_055912.jpg);
 }
+
 .post-1,
 .post-2,
 .post-3,
@@ -524,10 +527,51 @@ a {
   padding: 10rem 0rem;
   border-radius: 11px;
 }
+.feed-bio-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-img-post {
+  height: 60rem;
+  background-size: cover;
+  margin-bottom: 4.8rem;
+  transition: all 0.5s;
+  border-radius: 7px;
+}
+.project-1-img {
+  background-image: url(pics/Portfolio.png);
+  background-size: cover;
+}
+.project-2-img {
+  background-image: url(pics/HotelFlow-dashboard.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #0c8599;
+}
+.project-3-img {
+  background-image: url(pics/Portfolio.png);
+  background-size: cover;
+}
 
 .post-in-progress {
   position: relative;
   overflow: hidden;
+}
+.reaction-projects {
+  display: flex;
+  justify-content: space-between;
+}
+.links-project {
+  display: flex;
+  flex-direction: column;
+}
+.links-project a {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #0c8599;
 }
 
 .post-in-progress::before {
@@ -543,7 +587,7 @@ a {
   width: 20rem;
   height: 3rem;
   background-color: yellow;
-  border: 1px solid black;
+  border: 2px solid black;
 }
 
 /* * <!-- ******* about me ************ --> */
