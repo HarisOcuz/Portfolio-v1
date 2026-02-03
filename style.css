@@ -91,11 +91,8 @@ body {
   display: flex;
   padding: 4rem 8rem;
   gap: 4rem;
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 .email-send-form {
-  /* padding: 4em 8rem; */
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -106,7 +103,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 5rem;
-  /* padding: 8rem 5rem; */
 }
 .email-send-container {
   background-image: linear-gradient(to left, #0c8599, #fff);
@@ -285,9 +281,7 @@ body {
   height: 2.2rem;
   color: #0c8599;
   font-weight: 800;
-  text-shadow:
-    1px 1px 0 black,
-    -1px -1px 0 black;
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black;
 
   transition: all 0.3s;
 }
@@ -461,7 +455,7 @@ body {
 }
 
 .post-1 {
-  background-image: url(pics/IMG-7a329dab812a5a0a4f120fe4fd80b3be-V.jpg);
+  background-image: url(pics/20240530_183144396_iOS.jpg);
 }
 .post-2 {
   background-image: url(pics/20240725_023737826_iOS.jpg);
@@ -529,6 +523,27 @@ a {
   margin-bottom: 10rem;
   padding: 10rem 0rem;
   border-radius: 11px;
+}
+
+.post-in-progress {
+  position: relative;
+  overflow: hidden;
+}
+
+.post-in-progress::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(28%, 104%) rotate(50deg);
+  content: "In Arbeit";
+  font-size: 1.8rem;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+  width: 20rem;
+  height: 3rem;
+  background-color: yellow;
+  border: 1px solid black;
 }
 
 /* * <!-- ******* about me ************ --> */
@@ -658,15 +673,15 @@ a {
   background-size: cover;
 }
 [data-img="1"] {
-  background-image: url(IMG_0523.jpeg);
+  background-image: url(pics/20240530_183150702_iOS.jpg);
   background-size: cover;
 }
 [data-img="2"] {
-  background-image: url(IMG_0551.jpeg);
+  background-image: url(pics/20240530_183150702_iOS.jpg);
   background-size: cover;
 }
 [data-img="3"] {
-  background-image: url(IMG_0554.jpeg);
+  background-image: url(pics/20240530_183150702_iOS.jpg);
   background-size: cover;
 }
 
