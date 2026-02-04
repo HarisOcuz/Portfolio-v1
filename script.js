@@ -187,6 +187,6 @@ sendEmailBtn.addEventListener("click", function () {
   inputEmailFields.forEach((fields) =>
     fields.value === ""
       ? fields.classList.add("has-input-error")
-      : fields.classList.remove("has-input-error")
+      : fields.classList.remove("has-input-error"),
   );
 });
