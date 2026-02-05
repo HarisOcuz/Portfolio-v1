@@ -875,6 +875,8 @@ a {
     display: inline;
   }
   .profile-btns {
+    position: absolute;
+    right: 2rem;
     padding: 0;
     gap: 0.4rem;
     align-items: center;
@@ -888,5 +890,12 @@ a {
   .profile-img-section:hover {
     height: 22rem;
     width: 22rem;
+  }
+  .bio {
+    padding: 0 1rem;
+  }
+  .section-followers.container.grid-3 {
+    justify-content: center;
+    gap: 6rem;
   }
 }
