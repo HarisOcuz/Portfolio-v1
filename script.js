@@ -155,6 +155,10 @@ followBtn.addEventListener("click", () => {
        <span>
          <ion-icon class="icons-follow" name="person-add-outline"></ion-icon>
        </span>`;
+
+  if (isFollowing) {
+    followBtn.classList.add("following");
+  } else followBtn.classList.remove("following");
 });
 
 // *********** EMAIL FUNCTION *************
