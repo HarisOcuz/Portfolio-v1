@@ -91,12 +91,12 @@
               <h2>Kontaktieren sie mich</h2>
               <h3>Ich freue mich über eine Nachricht von Ihnen, vielleicht finden wir zusammen</h3>
             </div>
-            <div class="email-send-form">
-              <input placeholder="Name" class="input-email-field input-email-field-name input-email-field-user-info"></input>
-              <input placeholder="E-Mail" class="input-email-field input-email-field-email input-email-field-user-info"></input>
-              <textarea placeholder="Nachricht" class="input-email-field input-email-field-message input-email-field-message"></textarea>
-              <button class="send-email-btn">Senden</button>
-            </div>
+            <form id="contact-form" class="email-send-form">
+              <input name="user-name" required placeholder="Name" class="input-email-field input-email-field-name input-email-field-user-info"></input>
+              <input name="user-email" required placeholder="E-Mail" class="input-email-field input-email-field-email input-email-field-user-info"></input>
+              <textarea name="message" required placeholder="Nachricht" class="input-email-field input-email-field-message input-email-field-message"></textarea>
+              <button type="submit" class="send-email-btn">Senden</button>
+            </form>
           </div>
         </div> 
        
@@ -564,7 +564,9 @@
 
 <div class="footer-section ">
   <div class="footer-container">
-    <h3 class="footer-h3">Haris Ocuz</h3>
+    <a href="#" class="footer-nav-to-top">
+      <h3 class="footer-h3">Haris Ocuz</h3>
+    </a>
     <span class="footer-span">Web Entwickler</span>
     <div class="social-icons">
       <a class="footer-link" href="https://www.facebook.com/haris.ocuz/" target="_blank">
@@ -572,7 +574,7 @@
 
             <a class="footer-link" href="https://www.instagram.com/hariso94/" target="_blank">
             <ion-icon  name="logo-instagram"></ion-icon></a>
-            <a class="footer-link" href="#" target="_blank">
+            <a class="footer-link" href="https://www.linkedin.com/in/haris-ocuz-a274682a0/" target="_blank">
             <ion-icon  name="logo-linkedin"></ion-icon></a>
             <a class="footer-link" href="https://github.com/HarisOcuz" target="_blank">
             <ion-icon name="logo-github"></ion-icon></a>
@@ -580,15 +582,7 @@
         <!-- </div> -->
 
        </div>
-
-      
-
-
-    
-
-
-
-
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 

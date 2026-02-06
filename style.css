@@ -119,6 +119,10 @@ body {
   border: none;
   box-shadow: 0 6px 3px rgba(124, 218, 255, 0.2);
 }
+input:focus {
+  border: 2px solid #0c8599;
+  outline: none;
+}
 .email-overlay {
   position: fixed;
   inset: 0;
@@ -676,7 +680,8 @@ a {
   display: flex;
   gap: 1rem;
 }
-.footer-link {
+.footer-link,
+.footer-nav-to-top {
   text-decoration: none;
   color: #f8f9fa;
   transition: all 0.3;
@@ -817,11 +822,7 @@ a {
 } */
 
 .following {
-  background-image: linear-gradient(
-    to right,
-    rgba(193, 227, 233, 0.562),
-    rgb(2, 59, 70)
-  );
+  background-image: linear-gradient(to right, #0c8599, #dad8d8);
   border: 2px solid #05353d;
 }
 

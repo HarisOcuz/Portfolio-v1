@@ -168,29 +168,60 @@ const closeEmailForm = document.querySelector(".close-email-form");
 const overlay = document.querySelector(".email-overlay");
 const emailForm = document.querySelector(".email-send-container");
 const sendEmailBtn = document.querySelector(".send-email-btn");
-const inputNameField = document.querySelector(".input-email-field-name ").value;
+const inputNameField = document.querySelector(".input-email-field-name");
+const emailFieldUser = document.querySelector(".input-email-field-email");
 
 const inputEmailFields = document.querySelectorAll(".input-email-field");
 
 openEmailForm.addEventListener("click", function () {
   emailForm.classList.remove("hidden");
   overlay.classList.remove("hidden");
+  inputNameField.focus();
 });
 
-closeEmailForm.addEventListener("click", function () {
+function closeForm() {
+  inputEmailFields.forEach((field) => (field.value = ""));
+  inputEmailFields.forEach(
+    (field) => (field.style.border = "2px solid #76e2f3"),
+  );
   emailForm.classList.add("hidden");
   overlay.classList.add("hidden");
-});
+}
 
-overlay.addEventListener("click", function () {
-  emailForm.classList.add("hidden");
-  overlay.classList.add("hidden");
-});
+closeEmailForm.addEventListener("click", closeForm);
+
+overlay.addEventListener("click", closeForm);
 
 sendEmailBtn.addEventListener("click", function () {
-  inputEmailFields.forEach((fields) =>
-    fields.value === ""
-      ? fields.classList.add("has-input-error")
-      : fields.classList.remove("has-input-error"),
-  );
+  inputEmailFields.forEach((field) => {
+    if (field.value === "") {
+      field.classList.add("has-input-error");
+    } else {
+      field.classList.remove("has-input-error");
+    }
+  });
+});
+
+(function () {
+  emailjs.init("YvYd4KQWL2gD1b_yv");
+})();
+
+const form = document.getElementById("contact-form");
+const userContactName = document.querySelector(".user-name");
+const userContactEmail = document.querySelector(".user-email");
+const userContactMessage = document.querySelector(".message");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  emailjs
+    .sendForm("service_amve6a8", "template_wp32xcf", this)
+    .then(() => {
+      alert("Email sent successfully 🚀");
+      closeForm();
+    })
+    .catch((error) => {
+      console.error("Email error:", error);
+      error.status === 412 && (emailFieldUser.style.border = "2px solid red");
+    });
 });
