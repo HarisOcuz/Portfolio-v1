@@ -994,17 +994,37 @@ li {
     justify-content: center;
     gap: 6rem;
   }
+  .section-3 {
+    /* padding: 1rem; */
+  }
+  .about-me-container {
+    /* padding: 1rem; */
+    font-size: 1.2rem;
+  }
+  .about-me-flex-header,
+  .text-content-about-me {
+    padding: 1rem;
+  }
+  .about-me-flex-header h2 {
+    font-size: 3rem;
+  }
+  .about-me-flex-header h3 {
+    font-size: 1.5rem;
+  }
+  .section h3 {
+    font-size: 1.5rem;
+  }
+  .section p {
+    font-size: 1.3rem;
+  }
   .sidebar-about-me {
     display: none !important;
   }
   .about-me-main-grid {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
   }
-  .text-content-about-me {
-    font-size: 1rem;
-    padding: 1rem;
-  }
+
   .about-me-img-container {
     margin-bottom: 2rem;
   }
