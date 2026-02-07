@@ -163,7 +163,11 @@ followBtn.addEventListener("click", () => {
 
 // *********** EMAIL FUNCTION *************
 
+<<<<<<< HEAD
 const openEmailForm = document.querySelectorAll(".email-onClick");
+=======
+const openEmailForm = document.querySelector(".email-onClick");
+>>>>>>> 6b2f11170d673ab04947a21755c1b0f9c4824619
 const closeEmailForm = document.querySelector(".close-email-form");
 const overlay = document.querySelector(".email-overlay");
 const emailForm = document.querySelector(".email-send-container");
@@ -173,6 +177,7 @@ const emailFieldUser = document.querySelector(".input-email-field-email");
 
 const inputEmailFields = document.querySelectorAll(".input-email-field");
 
+<<<<<<< HEAD
 openEmailForm.forEach((btn) =>
   btn.addEventListener("click", function () {
     emailForm.classList.remove("hidden");
@@ -180,6 +185,13 @@ openEmailForm.forEach((btn) =>
     inputNameField.focus();
   }),
 );
+=======
+openEmailForm.addEventListener("click", function () {
+  emailForm.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+  inputNameField.focus();
+});
+>>>>>>> 6b2f11170d673ab04947a21755c1b0f9c4824619
 
 function closeForm() {
   inputEmailFields.forEach((field) => (field.value = ""));
