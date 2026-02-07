@@ -1003,12 +1003,16 @@ li {
   }
   .text-content-about-me {
     font-size: 1rem;
+    padding: 1rem;
+  }
+  .about-me-img-container {
+    margin-bottom: 2rem;
   }
   .pic1,
   .pic2,
   .pic3 {
-    width: 123px;
-    height: 155px;
+    width: 116px;
+    height: 150px;
   }
   .section {
     margin-bottom: 2rem;
