@@ -924,8 +924,7 @@ li {
   .accordion-section.container,
   .section.section-1.section--active,
   .section.section-2,
-  .section.section-3,
-  .about-me-container {
+  .section.section-3 {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -994,16 +993,17 @@ li {
     justify-content: center;
     gap: 6rem;
   }
-  .section-3 {
-    /* padding: 1rem; */
-  }
+
   .about-me-container {
-    /* padding: 1rem; */
     font-size: 1.2rem;
   }
-  .about-me-flex-header,
+  .about-me-flex-header {
+    padding: 1rem;
+    width: 90%;
+  }
   .text-content-about-me {
     padding: 1rem;
+    width: 95%;
   }
   .about-me-flex-header h2 {
     font-size: 3rem;
