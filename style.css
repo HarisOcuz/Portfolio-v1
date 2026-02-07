@@ -638,6 +638,14 @@ a {
 .sidebar-about-me h4 {
   justify-self: center;
 }
+.about-me-flex-header h2 {
+  font-size: 5rem;
+  font-weight: 700;
+}
+.about-me-flex-header h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
 
 a .ionicon {
   width: 2rem;
@@ -654,6 +662,7 @@ a .ionicon {
   margin-bottom: 5rem;
   width: 100%;
 }
+
 .about-me-profile-img {
   background-image: url(pics/profile-pic.jpg);
   background-position: center;
