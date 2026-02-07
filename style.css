@@ -924,7 +924,8 @@ li {
   .accordion-section.container,
   .section.section-1.section--active,
   .section.section-2,
-  .section.section-3 {
+  .section.section-3,
+  .about-me-container {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -992,5 +993,24 @@ li {
   .section-followers.container.grid-3 {
     justify-content: center;
     gap: 6rem;
+  }
+  .sidebar-about-me {
+    display: none !important;
+  }
+  .about-me-main-grid {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .text-content-about-me {
+    font-size: 1rem;
+  }
+  .pic1,
+  .pic2,
+  .pic3 {
+    width: 123px;
+    height: 155px;
+  }
+  .section {
+    margin-bottom: 2rem;
   }
 }
