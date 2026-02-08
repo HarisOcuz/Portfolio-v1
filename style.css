@@ -539,7 +539,7 @@ a {
 }
 
 .project-img-post {
-  height: 60rem;
+  height: 30rem;
   background-size: cover;
   margin-bottom: 4.8rem;
   transition: all 0.5s;
@@ -564,7 +564,10 @@ a {
 .post-in-progress {
   position: relative;
   overflow: hidden;
-  width: 80%;
+}
+
+.project {
+  width: 60%;
   margin: 0 auto;
   margin-bottom: 5rem;
 }
@@ -580,6 +583,17 @@ a {
   font-size: 1.6rem;
   font-weight: 600;
   color: #0c8599;
+  transition: all 0.3s;
+}
+.links-project a:hover {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #05353d;
+}
+.disabled-link {
+  pointer-events: none;
+  color: gray !important;
+  cursor: not-allowed;
 }
 
 .post-in-progress::before {
