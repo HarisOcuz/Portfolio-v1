@@ -1046,4 +1046,33 @@ li {
   .section {
     margin-bottom: 2rem;
   }
+  /* // ! EMAIL-CONTACT ME CONTAINER  */
+  .email-send-container {
+    width: 90%;
+  }
+  .email-flex {
+    padding: 1.2rem 2.4rem;
+    gap: 1rem;
+  }
+  .email-form-text-section {
+    padding: 2rem 0;
+    width: 50%;
+    gap: 3rem;
+  }
+  .email-form-text-section h2 {
+    font-size: 2rem;
+  }
+  .email-form-text-section h3 {
+    font-size: 1.2rem;
+  }
+  .email-send-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 0;
+  }
+  .input-email-field-message {
+    height: 12rem;
+  }
 }
