@@ -178,7 +178,10 @@ openEmailForm.forEach((btn) =>
   btn.addEventListener("click", function () {
     emailForm.classList.remove("hidden");
     overlay.classList.remove("hidden");
-    inputNameField.focus();
+
+    if (window.innerWidth > 600) {
+      inputNameField.focus();
+    }
   }),
 );
 
