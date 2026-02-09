@@ -14,8 +14,16 @@ const sections = document.querySelectorAll(".section");
 // *********** LIKE FUNCTION *************
 likeBtn.forEach(function (btn) {
   btn.addEventListener("click", function () {
-    console.log("Radi");
+    const numLikes = btn.closest(".post").querySelector(".num-likes");
+    let count = Number(numLikes.textContent.split(" ")[0]);
+    console.log(Number(count) + 1);
     btn.style.color = btn.style.color === "red" ? "#0c8599" : "red";
+    if (btn.style.color === "red") {
+      count += 1;
+    } else {
+      count -= 1;
+    }
+    numLikes.textContent = `${count} likes`;
   });
 });
 

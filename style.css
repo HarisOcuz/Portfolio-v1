@@ -220,20 +220,19 @@ input:focus {
 
   border: 5px solid #fff;
   border-radius: 50%;
-  background-image: url(pics/profile-pic.jpg);
-  background-position: center;
-  background-size: cover;
+  background-image: url(pics/profile-pic-portfolio.jpeg);
+  background-position: center top;
+  background-size: 125%;
   margin-left: 5rem;
   transform: translateY(-50%);
   transition: all 0.5s;
-}
-.profile-img-section:hover {
-  cursor: pointer;
-  height: 40rem;
-  width: 40rem;
+  margin-left: 2rem;
 }
 
-.profile-scale {
+.profile-img-section:hover {
+  cursor: pointer;
+  height: 25rem;
+  width: 25rem;
 }
 
 .profile-flex {
@@ -394,7 +393,7 @@ input:focus {
 .accordion-img {
   height: 4.8rem;
   width: 4.8rem;
-  background-image: url(pics/profile-pic.jpg);
+  background-image: url(pics/profile-pic-portfolio.jpeg);
   background-size: cover;
   border-radius: 50%;
 }
@@ -491,7 +490,7 @@ input:focus {
 }
 .reaction {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   gap: 1.8rem;
 }
 .like-btn {
@@ -500,6 +499,10 @@ input:focus {
 }
 .comment-btn {
   cursor: pointer;
+}
+.num-likes {
+  font-weight: 500;
+  color: #0c8599;
 }
 
 a {
@@ -681,9 +684,9 @@ a .ionicon {
 }
 
 .about-me-profile-img {
-  background-image: url(pics/profile-pic.jpg);
-  background-position: center;
-  background-size: cover;
+  background-image: url(pics/profile-pic-portfolio.jpeg);
+  background-position: center top;
+  background-size: 125%;
   border: 2px solid #fff;
   border-radius: 50%;
   height: 150px;
@@ -937,10 +940,22 @@ li {
 }
 
 .following {
-  background-image: linear-gradient(to right, #0c8599, #dad8d8);
-  border: 2px solid #05353d;
+  background-color: #fff;
+  border: 2px solid #0c8599;
+  color: #0c8599;
+  transition: all 0.3s;
 }
-
+.following .icons-follow {
+  color: #0c8599;
+}
+.following:hover {
+  background-color: #0c8599;
+  color: #fff;
+}
+.following:hover .icons-follow {
+  background-color: #0c8599;
+  color: #fff;
+}
 @media (max-width: 600px) {
   /* Container full width + padding */
   .container {
@@ -1009,13 +1024,7 @@ li {
   .follow-btn {
     padding: 0.6rem 1.2rem;
   }
-  .profile-img-section {
-    margin-left: 2rem;
-  }
-  .profile-img-section:hover {
-    height: 22rem;
-    width: 22rem;
-  }
+
   .bio {
     padding: 0 1rem;
   }
