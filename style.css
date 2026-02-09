@@ -392,6 +392,11 @@ input:focus {
   margin-left: 2rem;
   font-size: 1.4rem;
 }
+.accordion-info a {
+  text-decoration: none;
+  font-weight: 500;
+  font-style: italic;
+}
 
 .accordion-img {
   height: 4.8rem;
