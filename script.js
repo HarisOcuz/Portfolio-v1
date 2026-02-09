@@ -43,14 +43,9 @@ accordionTitleContainer.addEventListener("click", (el) => {
   } else return;
 });
 
-//   tab.classList.remove("accordion--active");
-//   document
-//     .querySelector(`.section-${tab.dataset.tab}`)
-//     .classList.remove("section--active");
-//   document
-//     .querySelector(`.section-${tab.dataset.tab}`)
-//     .classList.add("section--active");
-// });
+function updateFollowers() {
+  console.log(numFollowers.textContent);
+}
 
 // *********** COMMMENT FUNCTION *************
 
@@ -142,19 +137,24 @@ arrows.forEach((e) => {
 // *********** FOLLOW BTN *************
 const followBtn = document.querySelector(".follow-btn");
 let isFollowing = false;
+const numFollowers = document.querySelector(".followers-update");
 
 followBtn.addEventListener("click", () => {
   isFollowing = !isFollowing;
 
-  followBtn.innerHTML = isFollowing
-    ? `<span>Unfollow</span>
+  if ((followBtn.innerHTML = isFollowing)) {
+    followBtn.innerHTML = `<span>Unfollow</span>
        <span>
          <ion-icon class="icons-follow" name="person-remove-outline"></ion-icon>
-       </span>`
-    : `<span>Follow</span>
-       <span>
-         <ion-icon class="icons-follow" name="person-add-outline"></ion-icon>
-       </span>`;
+      </span>`;
+    numFollowers.textContent = +numFollowers.textContent + 1;
+  } else {
+    followBtn.innerHTML = `<span>Follow</span>
+      <span>
+        <ion-icon class="icons-follow" name="person-add-outline"></ion-icon>
+     </span>`;
+    numFollowers.textContent = +numFollowers.textContent - 1;
+  }
 
   if (isFollowing) {
     followBtn.classList.add("following");

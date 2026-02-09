@@ -380,6 +380,7 @@ input:focus {
 
 .accordion-flex {
   display: flex;
+  margin-bottom: 2rem;
 }
 
 .accordion-info {
@@ -425,6 +426,8 @@ input:focus {
 /* ******* FEED SECTION ************  */
 
 .feed-bio {
+  display: flex;
+  flex-direction: column;
   font-size: 1.6rem;
   margin-bottom: 3.6rem;
 }
@@ -586,7 +589,7 @@ a {
   transition: all 0.3s;
 }
 .links-project a:hover {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: 600;
   color: #05353d;
 }
@@ -880,19 +883,23 @@ li {
 }
 
 [data-img="0"] {
-  background-image: url(pics/20240530_183150702_iOS.jpg);
+  background-image: url(pics/Carr1.jpg);
   background-size: cover;
 }
 [data-img="1"] {
-  background-image: url(pics/20240530_183150702_iOS.jpg);
+  background-image: url(pics/Carr2.jpg);
   background-size: cover;
 }
 [data-img="2"] {
-  background-image: url(pics/20240530_183150702_iOS.jpg);
+  background-image: url(pics/Carr3.jpeg);
   background-size: cover;
 }
 [data-img="3"] {
-  background-image: url(pics/20240530_183150702_iOS.jpg);
+  background-image: url(pics/Carr4.jpg);
+  background-size: cover;
+}
+[data-img="4"] {
+  background-image: url(pics/Carr5.jpeg);
   background-size: cover;
 }
 
