@@ -1031,6 +1031,10 @@ li {
   .bio {
     padding: 0 1rem;
   }
+  .bio-text {
+    font-weight: 500;
+    line-height: 1.2;
+  }
   .section-followers.container.grid-3 {
     justify-content: center;
     gap: 6rem;
