@@ -879,6 +879,7 @@ li {
 
 .feed-img-post {
   position: relative;
+  background-color: #111;
 }
 .hidd-img {
   display: none;
